@@ -1,0 +1,15 @@
+<h1 style="text-align: center; background-color: blueviolet;">!!Welcome to Indicosmic Pvt Ltd!!</h1>
+<h2 style="text-align: center; background-color: aquamarine;">!!Custom Pipes in Angular 16!!</h2>
+<h2 style="text-align: center; background-color: azure;">!!custom Pipe Example!!</h2>
+<div style="align-content: center; background-color: bisque;">
+  <table style="text-align: center;background-color: azure;" border="1">
+    <tr *ngFor="let employee of employees">
+    <td>{{employee.code}}</td>
+    
+    <td>{{ employee.name | mypipe: employee.gender }}</td>
+
+    <td>{{employee.age}}</td>
+    <td>{{employee.salary}}</td>
+    </tr>
+    </table>
+</div>
